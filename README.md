@@ -1,2 +1,2 @@
-# meo
+# MEO
 Metagenome and Microbes Environmental Ontology
