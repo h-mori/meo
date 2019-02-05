@@ -23,9 +23,9 @@
   dc:description "An ontology for describing organismal habitats (especially focused on microbes)"@en ;
   dc:rights "http://creativecommons.org/licenses/by-sa/2.1/jp/"^^xsd:string ;
   dc:title "MEO: Metagenome/Microbes Environmental Ontology"@en ;
-  terms:modified "2015"^^xsd:gYear ;
+  terms:modified "2019"^^xsd:gYear ;
   owl:imports msv: ;
-  owl:versionInfo 0.9 ;
+  owl:versionInfo 0.9.1 ;
 .
 :MEO_0000001
   rdf:type owl:Class ;
@@ -248,14 +248,14 @@
   :hasExactSynonym "streams"@en ;
   :hasNarrowSynonym "braided stream"@en ;
   :hasNarrowSynonym "distributary"@en ;
-  :hasNarrowSynonym "fork (hydrographic"@en ;
+  :hasNarrowSynonym "fork"@en ;
   :hasNarrowSynonym "glacial stream"@en ;
   :hasNarrowSynonym "millstream"@en ;
   :hasNarrowSynonym "riffle"@en ;
   :hasNarrowSynonym "stream bend"@en ;
   :hasRelatedSynonym "beck"@en ;
   :hasRelatedSynonym "brook"@en ;
-  :hasRelatedSynonym "burn (hydrographic)"@en ;
+  :hasRelatedSynonym "burn"@en ;
   :hasRelatedSynonym "creek"@en ;
   :hasRelatedSynonym "rivulet"@en ;
   rdfs:comment "A flow of water in a channel or bed, as a brook, rivulet, or small river."@en ;
@@ -397,7 +397,7 @@
 :MEO_0000040
   rdf:type owl:Class ;
   :hasExactSynonym "marine sediments"@en ;
-  :hasExactSynonym "pelagic sediment {alternative name}"@en ;
+  :hasExactSynonym "pelagic sediment"@en ;
   :hasExactSynonym "sea sediment"@en ;
   :hasNarrowSynonym "deep sea sediment"@en ;
   sio:SIO_000061 :MEO_0000023 ;
@@ -951,10 +951,10 @@
   rdf:type owl:Class ;
   :hasBroadSynonym "stream channel"@en ;
   :hasExactSynonym "waterchannel"@en ;
-  :hasRelatedSynonym "chutes (hydrographic)"@en ;
+  :hasRelatedSynonym "chutes"@en ;
   :hasRelatedSynonym "improved channel"@en ;
-  :hasRelatedSynonym "reach (hydrographic)"@en ;
-  :hasRelatedSynonym "sound (bodies of water)"@en ;
+  :hasRelatedSynonym "reach"@en ;
+  :hasRelatedSynonym "sound"@en ;
   :hasRelatedSynonym "strait"@en ;
   rdfs:comment "A broad channel of water that connects two larger bodies of water, and thus lies between two land masses.The difference from strait is availability of crusing ship."@en ;
   rdfs:isDefinedBy : ;
@@ -1085,7 +1085,7 @@
   :hasNarrowSynonym "endolithic habitat"@en ;
   :hasRelatedSynonym "endolithic habitat"@en ;
   :hasRelatedSynonym "endolithic"@en ;
-  :hasRelatedSynonym "rockcy"@en ;
+  :hasRelatedSynonym "rocky"@en ;
   rdfs:comment "A mass of the mineral material of the crust of the Earth."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "rock"@en ;
@@ -1530,7 +1530,7 @@
   :hasNarrowSynonym "gut"@en ;
   :hasNarrowSynonym "gutter"@en ;
   :hasNarrowSynonym "kill"@en ;
-  :hasNarrowSynonym "lode(hydrographic)"@en ;
+  :hasNarrowSynonym "lode"@en ;
   :hasNarrowSynonym "narrows"@en ;
   :hasNarrowSynonym "overflow channel"@en ;
   :hasNarrowSynonym "passage"@en ;
@@ -1556,7 +1556,7 @@
   :hasRelatedSynonym "course"@en ;
   :hasRelatedSynonym "draw"@en ;
   :hasRelatedSynonym "moat"@en ;
-  :hasRelatedSynonym "narrows (hydrographic)"@en ;
+  :hasRelatedSynonym "narrows"@en ;
   :hasRelatedSynonym "tributary"@en ;
   :hasRelatedSynonym "waterway"@en ;
   rdfs:comment "A flowing body of water."@en ;
@@ -8103,7 +8103,7 @@
 :MEO_0000981
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "farmenter"@en ;
+  rdfs:label "fermenter"@en ;
   rdfs:subClassOf :MEO_0000979 ;
 .
 :MEO_0000982
@@ -9089,7 +9089,7 @@
 :MEO_0001149
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "hydrolitic upflow sludge bed"@en ;
+  rdfs:label "hydrolytic upflow sludge bed"@en ;
   rdfs:subClassOf :MEO_0000013 ;
 .
 :MEO_0001150
@@ -11528,8 +11528,9 @@
 .
 :MEO_0001536
   rdf:type owl:Class ;
+  :hasExactSynonym "aquaduct"@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "aquaduct"@en ;
+  rdfs:label "aqueduct"@en ;
   rdfs:subClassOf :MEO_0000839 ;
 .
 :MEO_0001537
@@ -12093,7 +12094,7 @@
   rdf:type owl:Class ;
   rdfs:comment "a swamp or marsh in an upland coastal region."@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "pocasin"@en ;
+  rdfs:label "pocosin"@en ;
   rdfs:subClassOf :MEO_0000028 ;
   rdfs:subClassOf :MEO_0001235 ;
 .
@@ -12159,7 +12160,7 @@
 :MEO_0001653
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "scroll plane"@en ;
+  rdfs:label "scroll plain"@en ;
   rdfs:subClassOf :MEO_0000150 ;
 .
 :MEO_0001654
@@ -12678,7 +12679,7 @@
 :MEO_0001739
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "penplain"@en ;
+  rdfs:label "peneplain"@en ;
   rdfs:subClassOf :MEO_0000150 ;
 .
 :MEO_0001740
@@ -16445,7 +16446,7 @@
 :MEO_0002401
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "milet product"@en ;
+  rdfs:label "millet product"@en ;
   rdfs:subClassOf :MEO_0002307 ;
 .
 :MEO_0002402
@@ -17139,7 +17140,7 @@
 .
 :MEO_0002524
   rdf:type owl:Class ;
-  :hasExactSynonym "mold, by Aspergillus oryzae, used in the manufacture of miso, amasake, sake, etc."@en ;
+  rdfs:comment "mold, by Aspergillus oryzae, used in the manufacture of miso, amasake, sake, etc."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "koji"@en ;
   rdfs:subClassOf :MEO_0002526 ;
@@ -17473,7 +17474,7 @@
 :MEO_0002578
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "candied prouct"@en ;
+  rdfs:label "candied product"@en ;
   rdfs:subClassOf :MEO_0002331 ;
 .
 :MEO_0002579
