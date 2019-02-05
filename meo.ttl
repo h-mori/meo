@@ -25,7 +25,7 @@
   dc:title "MEO: Metagenome/Microbes Environmental Ontology"@en ;
   terms:modified "2019"^^xsd:gYear ;
   owl:imports msv: ;
-  owl:versionInfo 0.9.1 ;
+  owl:versionInfo "0.9.1" ;
 .
 :MEO_0000001
   rdf:type owl:Class ;
@@ -524,7 +524,7 @@
   :hasRelatedSynonym "droppings"@en ;
   :hasRelatedSynonym "frass"@en ;
   :hasRelatedSynonym "pellet"@en ;
-  sio:SIO_000244 :MEO_0000466 ;
+  sio:SIO_000244 :MEO_0000468 ;
   rdfs:comment "Feces is an excreta consisting of waste products expelled from an animal's digestive tract through the anus (or cloaca) during defecation."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "feces"@en ;
@@ -575,7 +575,7 @@
   rdf:type owl:Class ;
   :hasExactSynonym "spit"@en ;
   :hasExactSynonym "spittle"@en ;
-  sio:SIO_000244 :MEO_0000472 ;
+  sio:SIO_000244 :MEO_0000467 ;
   rdfs:comment "Saliva is a slightly alkaline secretion of water, mucin, protein, salts, and often a starch-splitting enzyme (as ptyalin) that is secreted into the mouth by salivary glands, lubricates ingested food, and often begins the breakdown of starches. Saliva is a watery substance located in the mouths of organisms, secreted by the salivary glands."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "saliva"@en ;
@@ -4040,6 +4040,7 @@
 .
 :MEO_0000467
   rdf:type owl:Class ;
+  :hasNarrowSynonym "oral"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "oral cavity"@en ;
   rdfs:seeAlso <http://sig.uw.edu/fma#Oral_cavity> ;
@@ -14656,7 +14657,7 @@
 .
 :MEO_0002072
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000599 ;
+  sio:SIO_000244 :MEO_0000600 ;
   rdfs:isDefinedBy : ;
   rdfs:label "tears"@en ;
   rdfs:subClassOf :MEO_0000173 ;
