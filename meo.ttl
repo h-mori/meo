@@ -202,7 +202,6 @@
 .
 :MEO_0000023
   rdf:type owl:Class ;
-  :hasBroadSynonym "marine biome"@en ;
   :hasBroadSynonym "marine environment"@en ;
   :hasBroadSynonym "marine habitat"@en ;
   :hasExactSynonym "marine"@en ;
@@ -250,6 +249,7 @@
   :hasNarrowSynonym "distributary"@en ;
   :hasNarrowSynonym "fork (hydrographic"@en ;
   :hasNarrowSynonym "glacial stream"@en ;
+  :hasNarrowSynonym "lode"@en ;
   :hasNarrowSynonym "millstream"@en ;
   :hasNarrowSynonym "riffle"@en ;
   :hasNarrowSynonym "stream bend"@en ;
@@ -265,6 +265,7 @@
 .
 :MEO_0000027
   rdf:type owl:Class ;
+  :hasBroadSynonym "lake"@en ;
   :hasBroadSynonym "small lake"@en ;
   :hasNarrowSynonym "arboreal habitat"@en ;
   :hasNarrowSynonym "pool (water body)"@en ;
@@ -324,10 +325,10 @@
 .
 :MEO_0000032
   rdf:type owl:Class ;
-  :hasRelatedSynonym "outlet(watercourse)"@en ;
+  :hasRelatedSynonym "outlet"@en ;
   rdfs:comment "The exit or point of discharge of a stream into another stream, lake or sea."@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "mouth of the watercourse"@en ;
+  rdfs:label "mouth"@en ;
   rdfs:subClassOf :MEO_0003044 ;
 .
 :MEO_0000033
@@ -412,6 +413,7 @@
   :hasExactSynonym "marine water body"@en ;
   :hasExactSynonym "sea water"@en ;
   :hasExactSynonym "seawater"@en ;
+  :hasNarrowSynonym "ocean water"@en ;
   sio:SIO_000068 :MEO_0000023 ;
   rdfs:isDefinedBy : ;
   rdfs:label "marine water"@en ;
@@ -456,7 +458,6 @@
 .
 :MEO_0000047
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000523 ;
   rdfs:comment "Vaginal lubrication is a lubricating fluid that is naturally produced in a woman's vagina."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "vaginal lubrication"@en ;
@@ -465,7 +466,6 @@
 :MEO_0000048
   rdf:type owl:Class ;
   :hasBroadSynonym "oral biofilm"@en ;
-  sio:SIO_000061 :MEO_0000458 ;
   rdfs:comment "Dental plaque is a biofilm, usually a pale yellow, that develops naturally on the teeth."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "dental plaque"@en ;
@@ -475,7 +475,6 @@
   rdf:type owl:Class ;
   :hasExactSynonym "supra-gingival plaque"@en ;
   :hasExactSynonym "supragingival dental plaque"@en ;
-  sio:SIO_000061 :MEO_0002633 ;
   rdfs:isDefinedBy : ;
   rdfs:label "supragingival plaque"@en ;
   rdfs:subClassOf :MEO_0000048 ;
@@ -483,7 +482,6 @@
 :MEO_0000050
   rdf:type owl:Class ;
   :hasExactSynonym "sub-gingival plaque"@en ;
-  sio:SIO_000061 :MEO_0002632 ;
   rdfs:isDefinedBy : ;
   rdfs:label "subgingival plaque"@en ;
   rdfs:subClassOf :MEO_0000048 ;
@@ -509,7 +507,7 @@
   rdfs:comment "A wound is a type of injury in which skin is torn, cut, or punctured (an open wound), or where blunt force trauma causes a contusion (a closed wound)."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "wound"@en ;
-  rdfs:subClassOf :MEO_0001385 ;
+  rdfs:subClassOf :MEO_0000422 ;
 .
 :MEO_0000054
   rdf:type owl:Class ;
@@ -524,7 +522,6 @@
   :hasRelatedSynonym "droppings"@en ;
   :hasRelatedSynonym "frass"@en ;
   :hasRelatedSynonym "pellet"@en ;
-  sio:SIO_000244 :MEO_0000466 ;
   rdfs:comment "Feces is an excreta consisting of waste products expelled from an animal's digestive tract through the anus (or cloaca) during defecation."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "feces"@en ;
@@ -575,12 +572,12 @@
   rdf:type owl:Class ;
   :hasExactSynonym "spit"@en ;
   :hasExactSynonym "spittle"@en ;
-  sio:SIO_000244 :MEO_0000472 ;
+  :hasRelatedSynonym "oronasal secretion"@en ;
   rdfs:comment "Saliva is a slightly alkaline secretion of water, mucin, protein, salts, and often a starch-splitting enzyme (as ptyalin) that is secreted into the mouth by salivary glands, lubricates ingested food, and often begins the breakdown of starches. Saliva is a watery substance located in the mouths of organisms, secreted by the salivary glands."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "saliva"@en ;
   rdfs:seeAlso <http://sig.uw.edu/fma#Saliva> ;
-  rdfs:subClassOf :MEO_0000917 ;
+  rdfs:subClassOf :MEO_0000148 ;
 .
 :MEO_0000061
   rdf:type owl:DeprecatedClass ;
@@ -606,7 +603,6 @@
   rdfs:comment "Urine is a liquid excreta containing water and waste products made by the kidneys, stored in the bladder, and leaves the body through the urethra."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "urine"@en ;
-  rdfs:subClassOf :MEO_0000173 ;
   rdfs:subClassOf :MEO_0000176 ;
 .
 :MEO_0000064
@@ -785,7 +781,9 @@
   :hasNarrowSynonym "closed bay"@en ;
   :hasNarrowSynonym "nearshore"@en ;
   :hasRelatedSynonym "bahia"@en ;
+  :hasRelatedSynonym "bight"@en ;
   :hasRelatedSynonym "embayment"@en ;
+  :hasRelatedSynonym "firth"@en ;
   :hasRelatedSynonym "geo"@en ;
   :hasRelatedSynonym "gulf"@en ;
   :hasRelatedSynonym "sea loch"@en ;
@@ -823,6 +821,7 @@
 .
 :MEO_0000088
   rdf:type owl:Class ;
+  :hasBroadSynonym "agricultural site"@en ;
   :hasRelatedSynonym "farms"@en ;
   :hasRelatedSynonym "farmstead"@en ;
   :hasRelatedSynonym "nursery"@en ;
@@ -850,6 +849,7 @@
   :hasRelatedSynonym "downland"@en ;
   :hasRelatedSynonym "downs"@en ;
   :hasRelatedSynonym "glade"@en ;
+  :hasRelatedSynonym "grazing area"@en ;
   :hasRelatedSynonym "herbaceous area"@en ;
   :hasRelatedSynonym "prairie"@en ;
   rdfs:comment "An area in which grasses (Graminae) are a significant component of the vegetation."@en ;
@@ -1491,7 +1491,7 @@
 .
 :MEO_0000155
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000699 ;
+  :hasOriginIn :MEO_0000699 ;
   rdfs:comment "The outflow of water from a mine."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "mine drainage"@en ;
@@ -1530,7 +1530,7 @@
   :hasNarrowSynonym "gut"@en ;
   :hasNarrowSynonym "gutter"@en ;
   :hasNarrowSynonym "kill"@en ;
-  :hasNarrowSynonym "lode(hydrographic)"@en ;
+  :hasNarrowSynonym "lode"@en ;
   :hasNarrowSynonym "narrows"@en ;
   :hasNarrowSynonym "overflow channel"@en ;
   :hasNarrowSynonym "passage"@en ;
@@ -1552,11 +1552,14 @@
   :hasNarrowSynonym "water gap"@en ;
   :hasRelatedSynonym "awawa"@en ;
   :hasRelatedSynonym "barranca"@en ;
+  :hasRelatedSynonym "beck"@en ;
   :hasRelatedSynonym "branch"@en ;
+  :hasRelatedSynonym "brook"@en ;
   :hasRelatedSynonym "course"@en ;
   :hasRelatedSynonym "draw"@en ;
   :hasRelatedSynonym "moat"@en ;
   :hasRelatedSynonym "narrows (hydrographic)"@en ;
+  :hasRelatedSynonym "narrows"@en ;
   :hasRelatedSynonym "tributary"@en ;
   :hasRelatedSynonym "waterway"@en ;
   rdfs:comment "A flowing body of water."@en ;
@@ -1680,11 +1683,9 @@
 .
 :MEO_0000173
   rdf:type owl:Class ;
-  :hasExactSynonym "portion of body substance"@en ;
-  rdfs:comment "A natural bodily fluid or secretion such as blood, semen, saliva, blood plasma, intracellular and interstitial fluids. Material anatomical entity in a gaseous, liquid, semisolid or solid state, with or without the admixture of cells and biological macromolecules; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures. Examples: saliva, semen, cerebrospinal fluid, respiratory air, urine, feces, blood, plasma, lymph."@en ;
+  rdfs:comment "A natural bodily fluid or secretion such as blood, semen, saliva, blood plasma, intracellular and interstitial fluids."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "bodily fluid"@en ;
-  rdfs:seeAlso <http://sig.uw.edu/fma#Portion_of_body_substance> ;
   rdfs:subClassOf :MEO_0000422 ;
 .
 :MEO_0000174
@@ -1706,12 +1707,11 @@
   rdf:type owl:Class ;
   :hasExactSynonym "discharge"@en ;
   :hasExactSynonym "emission"@en ;
-  :hasExactSynonym "excrement"@en ;
   :hasExactSynonym "excrements"@en ;
-  rdfs:comment "Waste matter, such as sweat, urine, or feces, discharged from the body."@en ;
+  rdfs:comment "Excreta are bodily fluids consisting of waste matter, such as sweat or urine, discharged from the body."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "excreta"@en ;
-  rdfs:subClassOf :MEO_0000422 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0000177
   rdf:type owl:Class ;
@@ -1924,7 +1924,7 @@
 :MEO_0000201
   rdf:type owl:Class ;
   :hasExactSynonym "glacial moraine"@en ;
-  sio:SIO_000244 :MEO_0000170 ;
+  :hasOriginIn :MEO_0000170 ;
   rdfs:comment "An accumulation of boulders, stones, or other debris carried and deposited by a glacier."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "moraine"@en ;
@@ -1932,6 +1932,7 @@
 .
 :MEO_0000202
   rdf:type owl:Class ;
+  :hasBroadSynonym "agricultural site"@en ;
   :hasRelatedSynonym "grazing area"@en ;
   rdfs:comment "grassland used for grazing of ungulate livestock as part of a farm or ranch."@en ;
   rdfs:isDefinedBy : ;
@@ -2175,8 +2176,6 @@
 :MEO_0000230
   rdf:type owl:Class ;
   :hasExactSynonym "chymus"@en ;
-  sio:SIO_000061 :MEO_0000482 ;
-  sio:SIO_000061 :MEO_0000487 ;
   rdfs:isDefinedBy : ;
   rdfs:label "chyme"@en ;
   rdfs:subClassOf :MEO_0000399 ;
@@ -2224,6 +2223,8 @@
 :MEO_0000237
   rdf:type owl:Class ;
   :hasExactSynonym "straw"@en ;
+  :hasRelatedSynonym "mouth"@en ;
+  :hasRelatedSynonym "oral"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "drinking trough"@en ;
   rdfs:subClassOf :MEO_0000854 ;
@@ -2985,7 +2986,7 @@
   rdfs:comment "A paddy field for the cultivation of rice."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "rice field"@en ;
-  rdfs:subClassOf :MEO_0001443 ;
+  rdfs:subClassOf :MEO_0000829 ;
 .
 :MEO_0000339
   rdf:type owl:Class ;
@@ -3050,7 +3051,7 @@
   :hasExactSynonym "mine tip debris"@en ;
   :hasExactSynonym "tailing"@en ;
   :hasExactSynonym "tailings"@en ;
-  sio:SIO_000244 :MEO_0000699 ;
+  :hasOriginIn :MEO_0000699 ;
   rdfs:isDefinedBy : ;
   rdfs:label "mine waste"@en ;
   rdfs:subClassOf :MEO_0000113 ;
@@ -3080,6 +3081,7 @@
   :hasNarrowSynonym "beach berm"@en ;
   :hasNarrowSynonym "lagoon beach"@en ;
   :hasRelatedSynonym "foreshore flats"@en ;
+  :hasRelatedSynonym "rivage"@en ;
   :hasRelatedSynonym "strand"@en ;
   sio:SIO_000061 :MEO_0001672 ;
   sio:SIO_000325 :MEO_0000023 ;
@@ -3192,6 +3194,7 @@
   :hasNarrowSynonym "foreshore"@en ;
   :hasNarrowSynonym "seashore"@en ;
   :hasRelatedSynonym "intertidal"@en ;
+  :hasRelatedSynonym "littoral zone"@en ;
   rdfs:comment "The area of the foreshore and seabed that is exposed to the air at low tide and submerged at high tide, i.e., the area between tide marks."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "intertidal zone"@en ;
@@ -3458,32 +3461,30 @@
 :MEO_0000397
   rdf:type owl:Class ;
   :hasRelatedSynonym "gall"@en ;
-  sio:SIO_000244 :MEO_0000483 ;
   rdfs:comment "Bile is a bodily fluid consisting of a bitter, yellow or green alkaline fluid secreted by hepatocytes from the liver of most vertebrates. In many species, bile is stored in the gallbladder between meals and upon eating is discharged into the duodenum where the bile aids the process of digestion of lipids."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "bile"@en ;
-  rdfs:subClassOf :MEO_0000917 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0000398
   rdf:type owl:Class ;
   :hasExactSynonym "cerebro-spinal fluids"@en ;
   :hasExactSynonym "cerebrospinal fluid"@en ;
   :hasExactSynonym "csf"@en ;
-  :hasExactSynonym "liquor cerebrospinalis"@en ;
-  rdfs:comment "Cerebrospinal fluid (CSF) is a clear colorless bodily fluid produced in the choroid plexus of the brain. Transudate contained in the subarachnoid space."@en ;
+  rdfs:comment "Cerebrospinal fluid (CSF) is a clear colorless bodily fluid produced in the choroid plexus of the brain. "@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "cerebro-spinal fluid"@en ;
-  rdfs:seeAlso <http://sig.uw.edu/fma#Cerebrospinal_fluid> ;
   rdfs:subClassOf :MEO_0000402 ;
 .
 :MEO_0000399
   rdf:type owl:Class ;
+  :hasExactSynonym "digestive fluid"@en ;
   :hasExactSynonym "gut content"@en ;
   :hasExactSynonym "gut contents"@en ;
   rdfs:comment "Digesta is a food undergoing digestion."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "digesta"@en ;
-  rdfs:subClassOf :MEO_0000422 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0000400
   rdf:type owl:Class ;
@@ -3507,13 +3508,12 @@
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
   rdfs:label "spinal fluid"@en ;
-  rdfs:subClassOf :MEO_0002634 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0000403
   rdf:type owl:Class ;
   :hasExactSynonym "sputa"@en ;
   :hasRelatedSynonym "oronasal secretion"@en ;
-  sio:SIO_000244 :MEO_0000494 ;
   rdfs:comment "Sputum is mucus that is coughed up from the lower airways."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "sputum"@en ;
@@ -3614,7 +3614,6 @@
 .
 :MEO_0000419
   rdf:type owl:Class ;
-  :hasBroadSynonym "plant-associated habitat"@en ;
   :hasExactSynonym "plant associated"@en ;
   :hasRelatedSynonym "plant associated"@en ;
   :hasRelatedSynonym "plant"@en ;
@@ -4085,6 +4084,7 @@
 .
 :MEO_0000472
   rdf:type owl:Class ;
+  :hasRelatedSynonym "outlet"@en ;
   rdfs:comment "In human anatomy, the mouth is the first portion of the alimentary canal that receives food and saliva."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "mouth"@en ;
@@ -4241,6 +4241,7 @@
 .
 :MEO_0000489
   rdf:type owl:Class ;
+  :hasExactSynonym "supragingival"@en ;
   rdfs:comment "The free gingival margin is the interface between the sulcular epithelium and the epithelium of the oral cavity."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "gingival margin"@en ;
@@ -5461,31 +5462,32 @@
 .
 :MEO_0000623
   rdf:type owl:Class ;
-  :hasExactSynonym "pleural effusion"@en ;
-  sio:SIO_000128 :MEO_0000506 ;
   rdfs:comment "Transudate contained in the pleural cavity."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "pleural fluid"@en ;
   rdfs:seeAlso <http://sig.uw.edu/fma#Pleural_fluid> ;
   rdfs:seeAlso "FMA:12273"@en ;
-  rdfs:subClassOf :MEO_0002639 ;
+  rdfs:subClassOf :MEO_0000625 ;
 .
 :MEO_0000624
-  rdf:type owl:DeprecatedClass ;
+  rdf:type owl:Class ;
+  :hasExactSynonym "csf"@en ;
+  :hasExactSynonym "liquor cerebrospinalis"@en ;
+  rdfs:comment "Transudate contained in the subarachnoid space."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "cerebrospinal fluid"@en ;
   rdfs:seeAlso <http://sig.uw.edu/fma#Cerebrospinal_fluid> ;
   rdfs:seeAlso "FMA:20935"@en ;
-  rdfs:subClassOf :MEO_0000819 ;
-  owl:equivalentClass :MEO_0000398 ;
+  rdfs:subClassOf :MEO_0000625 ;
 .
 :MEO_0000625
-  rdf:type owl:DeprecatedClass ;
+  rdf:type owl:Class ;
+  rdfs:comment "Material anatomical entity in a gaseous, liquid, semisolid or solid state, with or without the admixture of cells and biological macromolecules; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures. Examples: saliva, semen, cerebrospinal fluid, respiratory air, urine, feces, blood, plasma, lymph."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "portion of body substance"@en ;
+  rdfs:seeAlso <http://sig.uw.edu/fma#Portion_of_body_substance> ;
   rdfs:seeAlso "FMA:9669"@en ;
-  rdfs:subClassOf :MEO_0000819 ;
-  owl:equivalentClass :MEO_0000173 ;
+  rdfs:subClassOf :MEO_0000175 ;
 .
 :MEO_0000626
   rdf:type owl:DeprecatedClass ;
@@ -5514,7 +5516,6 @@
 :MEO_0000629
   rdf:type owl:Class ;
   :hasNarrowSynonym "breast milk"@en ;
-  sio:SIO_000244 :MEO_0000589 ;
   rdfs:comment "Portion of secreted substance produced by the mammary gland."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "milk"@en ;
@@ -5524,9 +5525,7 @@
 .
 :MEO_0000630
   rdf:type owl:Class ;
-  :hasExactSynonym "ear wax"@en ;
   :hasExactSynonym "earwax"@en ;
-  sio:SIO_000244 :MEO_0000599 ;
   rdfs:comment "Earwax, also known by the medical term cerumen, is a yellowish waxy substance secreted in the ear canal of humans and other mammals."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "cerumen"@en ;
@@ -6021,6 +6020,7 @@
   :hasRelatedSynonym "coastal ecosystem"@en ;
   :hasRelatedSynonym "coastalregion"@en ;
   :hasRelatedSynonym "coastline"@en ;
+  :hasRelatedSynonym "littoral"@en ;
   :hasRelatedSynonym "rivage"@en ;
   sio:SIO_000204 :MEO_0000023 ;
   rdfs:comment "The general region of indefinite width that extends from the sea inland to the first major change in terrain features."@en ;
@@ -6218,6 +6218,7 @@
 :MEO_0000717
   rdf:type owl:Class ;
   :hasExactSynonym "lavage"@en ;
+  :hasRelatedSynonym "stomach"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "lavage fluid"@en ;
   rdfs:subClassOf :MEO_0002378 ;
@@ -6412,7 +6413,7 @@
 .
 :MEO_0000738
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000699 ;
+  :hasOriginIn :MEO_0000699 ;
   rdfs:isDefinedBy : ;
   rdfs:label "mine water"@en ;
   rdfs:subClassOf :MEO_0000036 ;
@@ -6666,7 +6667,6 @@
 :MEO_0000770
   rdf:type owl:Class ;
   :hasExactSynonym "aspirates"@en ;
-  rdfs:comment "the substance or contents that have been aspirated."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "aspirate"@en ;
   rdfs:subClassOf :MEO_0000422 ;
@@ -6735,7 +6735,7 @@
   rdfs:comment "A kitchen is a room or part of a room used for cooking and food preparation."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "kitchen"@en ;
-  rdfs:subClassOf :MEO_0000643 ;
+  rdfs:subClassOf :MEO_0000637 ;
 .
 :MEO_0000780
   rdf:type owl:Class ;
@@ -6989,7 +6989,6 @@
 .
 :MEO_0000814
   rdf:type owl:Class ;
-  :hasBroadSynonym "tundra biome"@en ;
   rdfs:comment "A tundra is a terrestrial biome which includes, across its spatial extent, only low-growing vegetation such as dwarf shrubs, sedges and grasses, mosses, and lichens. Tundra biomes rarely have monthly average temperatures above 10 degrees Celsius and have low evapotranspiration ratios."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "tundra"@en ;
@@ -7033,12 +7032,12 @@
 .
 :MEO_0000820
   rdf:type owl:Class ;
+  :hasExactSynonym "alkaline sediments"@en ;
   sio:SIO_000008 :MEO_0001269 ;
   sio:SIO_000061 :MEO_0000024 ;
   rdfs:isDefinedBy : ;
   rdfs:label "alkaline lake sediment"@en ;
-  rdfs:subClassOf :MEO_0000681 ;
-  rdfs:subClassOf :MEO_0000687 ;
+  rdfs:subClassOf :MEO_0000066 ;
 .
 :MEO_0000821
   rdf:type owl:Class ;
@@ -7161,7 +7160,6 @@
 :MEO_0000837
   rdf:type owl:Class ;
   :hasBroadSynonym "human associated habitat"@en ;
-  :hasBroadSynonym "human-associated habitat"@en ;
   :hasExactSynonym "constructed feature"@en ;
   :hasNarrowSynonym "built environment"@en ;
   :hasRelatedSynonym "anthropogenic biome"@en ;
@@ -7398,7 +7396,6 @@
 :MEO_0000874
   rdf:type owl:Class ;
   :hasNarrowSynonym "animal associated habitat"@en ;
-  :hasNarrowSynonym "animal-associated habitat"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "animal associated"@en ;
   rdfs:subClassOf :MEO_0000837 ;
@@ -7511,11 +7508,9 @@
 .
 :MEO_0000891
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000053 ;
-  sio:SIO_001157 :MEO_0000053 ;
   rdfs:isDefinedBy : ;
   rdfs:label "wound secretion"@en ;
-  rdfs:subClassOf :MEO_0000173 ;
+  rdfs:subClassOf :MEO_0000053 ;
 .
 :MEO_0000892
   rdf:type owl:Class ;
@@ -7525,7 +7520,6 @@
 .
 :MEO_0000893
   rdf:type owl:Class ;
-  sio:SIO_000061 :MEO_0000458 ;
   rdfs:isDefinedBy : ;
   rdfs:label "dental calculus"@en ;
   rdfs:subClassOf :MEO_0000892 ;
@@ -7635,6 +7629,7 @@
 :MEO_0000910
   rdf:type owl:Class ;
   :hasRelatedSynonym "fuel"@en ;
+  :hasRelatedSynonym "gas"@en ;
   sio:SIO_000008 :MEO_0001448 ;
   rdfs:isDefinedBy : ;
   rdfs:label "hydrocarbon contaminated soil"@en ;
@@ -7644,7 +7639,6 @@
   rdf:type owl:Class ;
   :hasExactSynonym "gastric secretion"@en ;
   :hasExactSynonym "stomach secretion"@en ;
-  sio:SIO_000128 :MEO_0000482 ;
   rdfs:isDefinedBy : ;
   rdfs:label "gastric fluid"@en ;
   rdfs:subClassOf :MEO_0000917 ;
@@ -7654,10 +7648,10 @@
   :hasExactSynonym "rumen digesta"@en ;
   :hasExactSynonym "rumen liquid"@en ;
   :hasExactSynonym "rumen liquids"@en ;
-  sio:SIO_000244 :MEO_0000046 ;
+  :hasRelatedSynonym "digesta"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "rumen fluid"@en ;
-  rdfs:subClassOf :MEO_0000911 ;
+  rdfs:subClassOf :MEO_0000395 ;
 .
 :MEO_0000913
   rdf:type owl:Class ;
@@ -7668,9 +7662,10 @@
 :MEO_0000914
   rdf:type owl:Class ;
   :hasExactSynonym "rumen content"@en ;
+  :hasRelatedSynonym "chyme"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "rumen solids"@en ;
-  rdfs:subClassOf :MEO_0000230 ;
+  rdfs:subClassOf :MEO_0000395 ;
 .
 :MEO_0000915
   rdf:type owl:Class ;
@@ -7695,8 +7690,6 @@
 .
 :MEO_0000918
   rdf:type owl:Class ;
-  sio:SIO_000061 :MEO_0000586 ;
-  rdfs:comment "the fatty secretion of the sebaceous glands."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "sebum"@en ;
   rdfs:subClassOf :MEO_0000422 ;
@@ -7740,10 +7733,9 @@
 .
 :MEO_0000925
   rdf:type owl:Class ;
-  :hasExactSynonym "ileostoma effluent"@en ;
   :hasExactSynonym "ileostomy effluent"@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "ileostomy fluid"@en ;
+  rdfs:label "ileostoma effluent"@en ;
   rdfs:subClassOf :MEO_0000176 ;
 .
 :MEO_0000926
@@ -8013,8 +8005,6 @@
 :MEO_0000969
   rdf:type owl:Class ;
   :hasExactSynonym "ileal contents"@en ;
-  :hasExactSynonym "ileum contents"@en ;
-  sio:SIO_000128 :MEO_0000488 ;
   rdfs:isDefinedBy : ;
   rdfs:label "ileal content"@en ;
   rdfs:subClassOf :MEO_0000968 ;
@@ -8024,8 +8014,6 @@
   :hasExactSynonym "cecal contents"@en ;
   :hasExactSynonym "cecal material"@en ;
   :hasExactSynonym "cecal stool"@en ;
-  :hasExactSynonym "cecum contents"@en ;
-  sio:SIO_000128 :MEO_0000460 ;
   rdfs:isDefinedBy : ;
   rdfs:label "cecal content"@en ;
   rdfs:subClassOf :MEO_0000968 ;
@@ -8052,7 +8040,6 @@
 .
 :MEO_0000974
   rdf:type owl:Class ;
-  sio:SIO_000128 :MEO_0000316 ;
   rdfs:isDefinedBy : ;
   rdfs:label "bathroom door knob"@en ;
   rdfs:subClassOf :MEO_0000852 ;
@@ -8086,9 +8073,8 @@
 :MEO_0000979
   rdf:type owl:Class ;
   :hasNarrowSynonym "commercial factory"@en ;
-  :hasRelatedSynonym "generating plant"@en ;
   :hasRelatedSynonym "mill"@en ;
-  :hasRelatedSynonym "power plant"@en ;
+  :hasRelatedSynonym "plant"@en ;
   :hasRelatedSynonym "works"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "factory"@en ;
@@ -8640,10 +8626,8 @@
 .
 :MEO_0001071
   rdf:type owl:Class ;
-  :hasExactSynonym "arterial plaque"@en ;
-  rdfs:comment "Cholesterol plaques are the products of heart disease. Plaques begin in artery walls and grow over years. The growth of cholesterol plaques slowly blocks blood flow in the arteries."@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "clogged arteries"@en ;
+  rdfs:label "arterial plaque"@en ;
   rdfs:subClassOf :MEO_0000422 ;
 .
 :MEO_0001072
@@ -8837,6 +8821,7 @@
 :MEO_0001111
   rdf:type owl:Class ;
   :hasExactSynonym "outcrop"@en ;
+  :hasExactSynonym "rock outcrop"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "outcropped"@en ;
   rdfs:subClassOf :MEO_0002545 ;
@@ -9729,9 +9714,10 @@
 :MEO_0001253
   rdf:type owl:Class ;
   :hasBroadSynonym "high salinity"@en ;
+  :hasBroadSynonym "hyper salinity"@en ;
   :hasBroadSynonym "hypersaline"@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "hyper salinity"@en ;
+  rdfs:label "brine"@en ;
   rdfs:subClassOf :MEO_0001245 ;
 .
 :MEO_0001254
@@ -9847,7 +9833,7 @@
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
   rdfs:label "plant productive state"@en ;
-  rdfs:subClassOf :MEO_0002547 ;
+  rdfs:subClassOf :MEO_0002548 ;
 .
 :MEO_0001272
   rdf:type owl:Class ;
@@ -9946,29 +9932,26 @@
 :MEO_0001287
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "spring season"@en ;
+  rdfs:label "spring"@en ;
   rdfs:subClassOf :MEO_0001362 ;
 .
 :MEO_0001288
   rdf:type owl:Class ;
-  :hasExactSynonym "summer"@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "summer season"@en ;
+  rdfs:label "summer"@en ;
   rdfs:subClassOf :MEO_0001362 ;
 .
 :MEO_0001289
   rdf:type owl:Class ;
-  :hasExactSynonym "autumn"@en ;
   :hasExactSynonym "fall"@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "autumn season"@en ;
+  rdfs:label "autumn"@en ;
   rdfs:subClassOf :MEO_0001362 ;
 .
 :MEO_0001290
   rdf:type owl:Class ;
-  :hasExactSynonym "winter"@en ;
   rdfs:isDefinedBy : ;
-  rdfs:label "winter season"@en ;
+  rdfs:label "winter"@en ;
   rdfs:subClassOf :MEO_0001362 ;
 .
 :MEO_0001291
@@ -10092,7 +10075,7 @@
 .
 :MEO_0001312
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0001492 ;
+  :hasOriginIn :MEO_0001492 ;
   rdfs:isDefinedBy : ;
   rdfs:label "volcanic ash"@en ;
   rdfs:subClassOf :MEO_0000866 ;
@@ -10844,7 +10827,6 @@
 .
 :MEO_0001418
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000496 ;
   rdfs:isDefinedBy : ;
   rdfs:label "nasal mucus"@en ;
   rdfs:subClassOf :MEO_0000148 ;
@@ -10896,10 +10878,9 @@
 .
 :MEO_0001426
   rdf:type owl:Class ;
-  rdfs:comment "a thin mixture of an insoluble substance, as cement, clay, or coal, with a liquid, as water or oil."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "slurry"@en ;
-  rdfs:subClassOf :MEO_0000036 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0001427
   rdf:type owl:Class ;
@@ -11889,7 +11870,7 @@
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
   rdfs:label "elevation"@en ;
-  rdfs:subClassOf :MEO_0002537 ;
+  rdfs:subClassOf :MEO_0003047 ;
 .
 :MEO_0001602
   rdf:type owl:Class ;
@@ -12346,10 +12327,9 @@
 .
 :MEO_0001684
   rdf:type owl:Class ;
-  rdfs:comment "the matter ejected in vomiting."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "vomit"@en ;
-  rdfs:subClassOf :MEO_0000422 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0001685
   rdf:type owl:Class ;
@@ -14592,10 +14572,9 @@
 .
 :MEO_0002059
   rdf:type owl:Class ;
-  :hasExactSynonym "corn field"@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "maize field"@en ;
-  rdfs:subClassOf :MEO_0001443 ;
+  rdfs:subClassOf :MEO_0000829 ;
 .
 :MEO_0002060
   rdf:type owl:Class ;
@@ -14617,68 +14596,66 @@
 .
 :MEO_0002063
   rdf:type owl:Class ;
-  sio:SIO_000128 :MEO_0000519 ;
-  rdfs:comment "The amniotic fluid, commonly called a pregnant woman's water or waters (Latin liquor amnii), is the protective liquid contained by the amniotic sac of a pregnant female."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "amniotic fluid"@en ;
   rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002064
   rdf:type owl:Class ;
-  sio:SIO_000128 :MEO_0000600 ;
-  rdfs:comment "The aqueous humour is a transparent, watery fluid similar to plasma, but containing low protein concentrations. It is secreted from the ciliary epithelium, a structure supporting the lens. It fills both the anterior and the posterior chambers of the eye, and is not to be confused with the vitreous humour, which is located in the space between the lens and the retina, also known as the posterior cavity or vitreous chamber."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "aqueous humour"@en ;
-  rdfs:subClassOf :MEO_0002634 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002065
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
   rdfs:label "sweat"@en ;
-  rdfs:subClassOf :MEO_0000173 ;
+  rdfs:subClassOf :MEO_0000176 ;
+.
+:MEO_0002067
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy : ;
+  rdfs:label "ear wax"@en ;
   rdfs:subClassOf :MEO_0000176 ;
 .
 :MEO_0002068
   rdf:type owl:Class ;
-  sio:SIO_000061 :MEO_0000485 ;
-  sio:SIO_000244 :MEO_0000596 ;
   rdfs:isDefinedBy : ;
   rdfs:label "chyle"@en ;
-  rdfs:subClassOf :MEO_0002074 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002070
   rdf:type owl:Class ;
-  sio:SIO_000128 :MEO_0000600 ;
   rdfs:isDefinedBy : ;
   rdfs:label "vitreous humor"@en ;
-  rdfs:subClassOf :MEO_0002634 ;
+  rdfs:subClassOf :MEO_0000173 ;
+.
+:MEO_0002071
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy : ;
+  rdfs:label "pleural effusion"@en ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002072
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000599 ;
   rdfs:isDefinedBy : ;
   rdfs:label "tears"@en ;
   rdfs:subClassOf :MEO_0000173 ;
-  rdfs:subClassOf :MEO_0000176 ;
 .
 :MEO_0002073
   rdf:type owl:Class ;
-  sio:SIO_000128 :MEO_0000455 ;
-  rdfs:comment "a viscous, non-Newtonian fluid found in the cavities of synovial joints."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "synovial fluid"@en ;
-  rdfs:subClassOf :MEO_0002634 ;
+  rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002074
   rdf:type owl:Class ;
-  sio:SIO_000244 :MEO_0000596 ;
   rdfs:isDefinedBy : ;
   rdfs:label "lymph"@en ;
   rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002075
   rdf:type owl:Class ;
-  rdfs:comment "an extracellular fluid that fills the spaces between most of the cells of the body and provides a substantial portion of the liquid environment of the body. Formed by filtration through the blood capillaries, it is drained away as lymph. It closely resembles blood plasma in composition but contains less protein."@en ;
   rdfs:isDefinedBy : ;
   rdfs:label "interstitial fluid"@en ;
   rdfs:subClassOf :MEO_0000173 ;
@@ -16903,7 +16880,7 @@
 :MEO_0002480
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
-  rdfs:label "human activity associated geosphere"@en ;
+  rdfs:label "human activitya associated geosphere"@en ;
   rdfs:subClassOf :MEO_0000837 ;
 .
 :MEO_0002481
@@ -17809,158 +17786,6 @@
   rdfs:label "meat product"@en ;
   rdfs:subClassOf :MEO_0001965 ;
 .
-:MEO_0002631
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "relative position to gingiva"@en ;
-  rdfs:subClassOf :MEO_0001284 ;
-.
-:MEO_0002632
-  rdf:type owl:Class ;
-  sio:SIO_000668 :MEO_0000479 ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "subgingival"@en ;
-  rdfs:subClassOf :MEO_0002631 ;
-.
-:MEO_0002633
-  rdf:type owl:Class ;
-  sio:SIO_000668 :MEO_0000479 ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "supragingival"@en ;
-  rdfs:subClassOf :MEO_0002631 ;
-.
-:MEO_0002634
-  rdf:type owl:Class ;
-  rdfs:comment "Transcellular fluid is the portion of total body water contained within epithelial lined spaces. It is the smallest component of extracellular fluid, which also includes interstitial fluid and plasma. It is often not calculated as a fraction of the extracellular fluid, but it is about 2.5% of the total body water or 5% of extracellular fluid. Examples of this fluid are cerebrospinal fluid, ocular fluid and joint fluid."@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "transcellular fluid"@en ;
-  rdfs:subClassOf :MEO_0000173 ;
-.
-:MEO_0002635
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "state of matter"@en ;
-  rdfs:subClassOf :MEO_0002549 ;
-.
-:MEO_0002636
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "solid"@en ;
-  rdfs:subClassOf :MEO_0002635 ;
-.
-:MEO_0002637
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "liquid"@en ;
-  rdfs:subClassOf :MEO_0002635 ;
-.
-:MEO_0002638
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "gas"@en ;
-  rdfs:subClassOf :MEO_0002635 ;
-.
-:MEO_0002639
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "coelomic fluid"@en ;
-  rdfs:subClassOf :MEO_0000173 ;
-.
-:MEO_0002640
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "window sill"@en ;
-  rdfs:subClassOf :MEO_0000637 ;
-.
-:MEO_0002641
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "dust"@en ;
-  rdfs:subClassOf :MEO_0000001 ;
-.
-:MEO_0002642
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "bathtub"@en ;
-  rdfs:subClassOf :MEO_0000637 ;
-.
-:MEO_0002643
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "living room"@en ;
-  rdfs:subClassOf :MEO_0000643 ;
-.
-:MEO_0002644
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "tile"@en ;
-  rdfs:subClassOf :MEO_0000637 ;
-.
-:MEO_0002645
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "bedroom"@en ;
-  rdfs:subClassOf :MEO_0000643 ;
-.
-:MEO_0002646
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "stove"@en ;
-  rdfs:subClassOf :MEO_0000637 ;
-.
-:MEO_0002647
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "resident"@en ;
-  rdfs:subClassOf :MEO_0001537 ;
-.
-:MEO_0002648
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "reproductivity state"@en ;
-  rdfs:subClassOf :MEO_0002548 ;
-.
-:MEO_0002649
-  rdf:type owl:Class ;
-  rdfs:comment "State that has reproductivity"@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "fertile"@en ;
-  rdfs:subClassOf :MEO_0002648 ;
-.
-:MEO_0002650
-  rdf:type owl:Class ;
-  rdfs:comment "State that don't have reproductivity"@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "sterile"@en ;
-  rdfs:subClassOf :MEO_0002648 ;
-.
-:MEO_0002651
-  rdf:type owl:Class ;
-  rdfs:comment "State that is steriled, and sex is female"@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "spayed"@en ;
-  rdfs:subClassOf :MEO_0002653 ;
-.
-:MEO_0002652
-  rdf:type owl:Class ;
-  rdfs:comment "State that is steriled, and sex is male"@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "castrated"@en ;
-  rdfs:subClassOf :MEO_0002653 ;
-.
-:MEO_0002653
-  rdf:type owl:Class ;
-  rdfs:comment "State that resulted in losing it reproductivity by surgery"@en ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "neutered"@en ;
-  rdfs:subClassOf :MEO_0002650 ;
-.
-:MEO_0002654
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy : ;
-  rdfs:label "neuter"@en ;
-  rdfs:subClassOf :MEO_0001306 ;
-.
 :MEO_0003044
   rdf:type owl:Class ;
   rdfs:isDefinedBy : ;
@@ -18018,6 +17843,14 @@
   rdfs:range xsd:string ;
   rdfs:subPropertyOf skos:altLabel ;
 .
+:hasOriginIn
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "has origin in is an antisymmetric, irreflexive (normally transitive) relation between a source of material and part, and it has to be contained in whole."@en ;
+  rdfs:isDefinedBy : ;
+  rdfs:label "has origin in"@en ;
+  rdfs:subPropertyOf sio:SIO_000008 ;
+  owl:inverseOf :isOriginOf ;
+.
 :hasRelatedSynonym
   rdf:type owl:AnnotationProperty ;
   rdfs:comment "Use this property when relation isn't necessary nor sufficient, but something relation is being."@en ;
@@ -18033,4 +17866,12 @@
   rdfs:isDefinedBy : ;
   rdfs:label "hierRank"@en ;
   rdfs:range xsd:integer ;
+.
+:isOriginOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "is origin of is an asymmetric, irreflexive (normally transitive) relation between a part and physical source, and source has to be contained it."@en ;
+  rdfs:isDefinedBy : ;
+  rdfs:label "is origin of"@en ;
+  rdfs:subPropertyOf sio:SIO_000011 ;
+  owl:inverseOf :hasOriginIn ;
 .
