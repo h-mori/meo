@@ -17970,97 +17970,97 @@
 .
 :MEO_0002681
   a owl:Class ;
-  rdfs:label "biofloc" ;
+  rdfs:label "biofloc"@en ;
   rdfs:subClassOf :MEO_0000845 ;
 .
 :MEO_0002682
   a owl:Class ;
-  rdfs:label "cloud" ;
+  rdfs:label "cloud"@en ;
   rdfs:subClassOf :MEO_0000001 ;
 .
 :MEO_0002683
   a owl:Class ;
-  rdfs:label "concrete" ;
+  rdfs:label "concrete"@en ;
   rdfs:subClassOf :MEO_0000850 ;
 .
 :MEO_0002684
   a owl:Class ;
-  rdfs:label "desalination cell" ;
+  rdfs:label "desalination cell"@en ;
   rdfs:subClassOf :MEO_0000978 ;
 .
 :MEO_0002685
   a owl:Class ;
-  rdfs:label "fertilizer" ;
+  rdfs:label "fertilizer"@en ;
   rdfs:subClassOf :MEO_0002077 ;
 .
 :MEO_0002686
   a owl:Class ;
-  rdfs:label "floral nectar" ;
+  rdfs:label "floral nectar"@en ;
   rdfs:subClassOf :MEO_0000376 ;
 .
 :MEO_0002688
   a owl:Class ;
-  rdfs:label "hyphosphere soil" ;
+  rdfs:label "hyphosphere soil"@en ;
   rdfs:subClassOf :MEO_0000007 ;
 .
 :MEO_0002689
   a owl:Class ;
-  rdfs:label "lichen" ;
+  rdfs:label "lichen"@en ;
   rdfs:subClassOf :MEO_0000417 ;
 .
 :MEO_0002690
   a owl:Class ;
-  rdfs:label "moonmilk" ;
+  rdfs:label "moonmilk"@en ;
   rdfs:subClassOf :MEO_0002269 ;
 .
 :MEO_0002691
   a owl:Class ;
-  rdfs:label "musk" ;
+  rdfs:label "musk"@en ;
   rdfs:subClassOf :MEO_0000173 ;
 .
 :MEO_0002692
   a owl:Class ;
-  rdfs:label "parchment" ;
+  rdfs:label "parchment"@en ;
   rdfs:subClassOf :MEO_0002298 ;
 .
 :MEO_0002693
   a owl:Class ;
-  rdfs:label "salt mine" ;
+  rdfs:label "salt mine"@en ;
   rdfs:subClassOf :MEO_0000699 ;
 .
 :MEO_0002694
   a owl:Class ;
-  rdfs:label "shale gas well" ;
+  rdfs:label "shale gas well"@en ;
   rdfs:subClassOf :MEO_0000900 ;
 .
 :MEO_0002695
   a owl:Class ;
-  rdfs:label "soda lime" ;
+  rdfs:label "soda lime"@en ;
   rdfs:subClassOf :MEO_0000009 ;
 .
 :MEO_0002696
   a owl:Class ;
-  rdfs:label "tar" ;
+  rdfs:label "tar"@en ;
   rdfs:subClassOf :MEO_0000940 ;
 .
 :MEO_0002697
   a owl:Class ;
-  rdfs:label "tin mine" ;
+  rdfs:label "tin mine"@en ;
   rdfs:subClassOf :MEO_0000699 ;
 .
 :MEO_0002698
   a owl:Class ;
-  rdfs:label "concrete" ;
+  rdfs:label "concrete"@en ;
   rdfs:subClassOf :MEO_0000637 ;
 .
 :MEO_0002699
   a owl:Class ;
-  rdfs:label "brick" ;
+  rdfs:label "brick"@en ;
   rdfs:subClassOf :MEO_0000637 ;
 .
 :MEO_0002700
   a owl:Class ;
-  rdfs:label "pot" ;
+  rdfs:label "pot"@en ;
   rdfs:subClassOf :MEO_0000847 ;
 .
 :MEO_0003044
