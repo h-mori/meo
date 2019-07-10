@@ -25,7 +25,7 @@
   dc:title "MEO: Metagenome/Microbes Environmental Ontology"@en ;
   terms:modified "2019"^^xsd:gYear ;
   owl:imports msv: ;
-  owl:versionInfo "0.9.1" ;
+  owl:versionInfo "0.9.2" ;
 .
 :MEO_0000001
   rdf:type owl:Class ;
